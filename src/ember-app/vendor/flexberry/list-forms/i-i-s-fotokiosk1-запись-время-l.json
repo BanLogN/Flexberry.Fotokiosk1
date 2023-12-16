@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk1-запись-время-e",
+  "editForm": "i-i-s-fotokiosk1-запись-время-e",
+  "external": false,
+  "caption": "Запись время",
+  "name": "IISFotokiosk1ЗаписьВремяL",
+  "className": "ЗаписьВремяL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk1-запись-время",
+      "modelProjection": "ЗаписьВремяL"
+    }
+  ]
+}

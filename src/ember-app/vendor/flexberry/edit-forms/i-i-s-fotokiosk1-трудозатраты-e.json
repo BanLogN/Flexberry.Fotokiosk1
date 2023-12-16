@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    },
+    {
+      "master": "материал",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "РасходМатериала.Материал",
+      "projection": "МатериалL",
+      "detailModelName": "i-i-s-fotokiosk1-расход-материала"
+    }
+  ],
+  "external": false,
+  "caption": "Трудозатраты",
+  "name": "IISFotokiosk1ТрудозатратыE",
+  "className": "ТрудозатратыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk1-трудозатраты",
+      "modelProjection": "ТрудозатратыE"
+    }
+  ]
+}

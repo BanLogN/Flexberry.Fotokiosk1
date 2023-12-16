@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Прайс",
+  "name": "IISFotokiosk1ПрайсE",
+  "className": "ПрайсE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk1-прайс",
+      "modelProjection": "ПрайсE"
+    }
+  ]
+}

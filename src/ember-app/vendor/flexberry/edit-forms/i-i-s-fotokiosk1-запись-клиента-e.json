@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    },
+    {
+      "master": "прайс",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "Услуга.Прайс",
+      "projection": "ПрайсL",
+      "detailModelName": "i-i-s-fotokiosk1-услуга"
+    },
+    {
+      "master": "записьВремя",
+      "displayAttributeName": "время",
+      "required": true,
+      "relationName": "Услуга.ЗаписьВремя",
+      "projection": "ЗаписьВремяL",
+      "detailModelName": "i-i-s-fotokiosk1-услуга"
+    }
+  ],
+  "external": false,
+  "caption": "Запись клиента",
+  "name": "IISFotokiosk1ЗаписьКлиентаE",
+  "className": "ЗаписьКлиентаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk1-запись-клиента",
+      "modelProjection": "ЗаписьКлиентаE"
+    }
+  ]
+}

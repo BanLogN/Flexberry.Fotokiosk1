@@ -1,0 +1,111 @@
+﻿{
+  "name": "IISFotokiosk1Услуга",
+  "modelName": "i-i-s-fotokiosk1-услуга",
+  "className": "Услуга",
+  "nameSpace": "IIS.Fotokiosk1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаУслуги",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "записьВремя",
+      "relatedTo": "i-i-s-fotokiosk1-запись-время",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "прайс",
+      "relatedTo": "i-i-s-fotokiosk1-прайс",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "записьКлиента",
+      "relatedTo": "i-i-s-fotokiosk1-запись-клиента",
+      "inverse": "услуга"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УслугаE",
+      "modelName": "i-i-s-fotokiosk1-услуга",
+      "attrs": [
+        {
+          "name": "датаУслуги",
+          "caption": "Дата услуги",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Прайс",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 2
+            },
+            {
+              "name": "цена",
+              "caption": "Цена",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Прайс",
+          "name": "прайс",
+          "relatedTo": "i-i-s-fotokiosk1-прайс",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Время",
+          "lookupValueField": "время",
+          "relationName": "ЗаписьВремя",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "время",
+              "caption": "Время",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Запись время",
+          "name": "записьВремя",
+          "relatedTo": "i-i-s-fotokiosk1-запись-время",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
